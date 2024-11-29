@@ -9,7 +9,7 @@
     body {
       margin: 0;
       font-family: 'Archivo Black', sans-serif;
-      background-color: black; /* hsl(0, 0%, calc(80% + 20% * Math.random())); */
+      background-color: hsl(0, 0%, calc(80% + 10% * Math.random()));
       color: white;
       display: flex;
       flex-direction: column;
@@ -18,34 +18,42 @@
       min-height: 100vh;
       padding: 0 16px;
     }
+
     img {
       max-width: 100%;
       height: auto;
       margin: 16px 0;
+      max-height: 200px;
     }
+
     .content {
       max-width: 600px;
       text-align: left;
     }
+
     .content p {
       margin: 16px 0;
       font-size: 1rem;
     }
+
     .newsletter {
       font-family: 'Open Sans', sans-serif;
       width: 100%;
       max-width: 600px;
       margin-top: 32px;
     }
+
     .newsletter h2 {
       font-size: 1.2rem;
       margin-bottom: 8px;
     }
+
     .newsletter form {
       display: flex;
       flex-direction: column;
       gap: 8px;
     }
+
     .newsletter input[type="email"] {
       padding: 8px;
       font-size: 1rem;
@@ -53,6 +61,7 @@
       border-radius: 4px;
       width: 100%;
     }
+
     .newsletter button {
       background: none;
       border: none;
@@ -83,3 +92,8 @@
     <h2>Subscribe to our newsletters:</h2>
     <form action="mailto:onecreationperday@gmail.com" method="POST" enctype="text/plain">
       <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</body>
+</html>
