@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eros Machine</title>
+  <style>
+    /* Set a random dark background color on each refresh */
+    body {
+      margin: 0;
+      font-family: 'Archivo Black', sans-serif;
+      background-color: hsl(0, 0%, calc(80% + 20% * Math.random()));
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      padding: 0 16px;
+    }
+    img {
+      width: 100px;
+      max-width: 90%;
+      margin: 16px 0;
+    }
+    .content {
+      max-width: 600px;
+      text-align: left;
+    }
+    .content p {
+      margin: 16px 0;
+      font-size: 1rem;
+    }
+    .newsletter {
+      font-family: 'Open Sans', sans-serif;
+      width: 100%;
+      max-width: 600px;
+      margin-top: 32px;
+    }
+    .newsletter h2 {
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+    .newsletter form {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .newsletter input[type="email"] {
+      padding: 8px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+    }
+    .newsletter button {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black:wght@400&family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Logo -->
+  <img src="logo.jpg" alt="Eros Machine Logo">
+
+  <!-- Text Content -->
+  <div class="content">
+    <p>
+      Eros Machine propose un ensemble d'éditions d'artistes réalisées de manières collectives ou
+      individuelles. Nos publications déclinent des séries d'images, mêlant des vocabulaires abstraits à des références érotiques ou pornographiques. Nos éditions mettent en évidence, dans leur transparence, la circulation des désirs, leurs codes et leurs modes de représentations au sein de la culture queer.
+    </p>
+  </div>
+
+  <!-- Newsletter Section -->
+  <div class="newsletter">
+    <h2>Subscribe to our newsletters:</h2>
+    <form action="mailto:onecreationperday@gmail.com" method="POST" enctype="text/plain">
+      <input type="email" name="email" placeholder="Enter your email" required>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</body>
+</html>
